@@ -62,8 +62,9 @@ corr_coef = data_df.hours.corr(data_df.scores)
 ```
 - The next step involved the splitting of dataset into training and testing sets which is an important part of evaluating data mining models. 
 Firstly, I split the dataset into attributs(inputs) and labels(outputs) which is followed by uusing the `Scikit-Learn` built-in `train_test_split()` method.
-- Now we can sucessfully train our algorithim using the `Scikit-Learn` built-in `LinerRegression` method and finally predict `score of a studying for 9.25 hrs/day`.
+- Now we can sucessfully train our algorithim using the `Scikit-Learn` built-in `LinearRegression` method and finally predict `score of a studying for 9.25 hrs/day`.
 
 ![Image](./images/output.png)
 
 -  The score predicted by our algorithim is `93.69173249` and the Mean Absolute Error is `4.183859899002982`.
+
