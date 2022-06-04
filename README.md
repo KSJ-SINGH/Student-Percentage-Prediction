@@ -11,6 +11,10 @@ I always took this saying with a grain of salt.
 This project, I aim to end my skepticism regarding this proverb. Using `Unsupervised ML algorithim`, I am going to calculate the `correlation` by a `linear regression test` between hours studied and precentage scored by a student.
 >`Correlation` is a statistical term describing the degree to which two variables move in coordination with one another. If the two variables move in the same direction, then those variables are said to have a positive `correlation`. If they move in opposite directions, then they have a negative `correlation`.
 ---
+## Project Goals:
+- Predict the percentage of a student based on the no. of study hours
+- What will be predicted score if a student studies for 9.25 hrs/day?
+---
 ## Prerequisites:
 In order to perform the intended test, I'll using `python3` as the main programming language and `Jupyter Notebook` as the computing platform.
 I'll also require the below mentioned libraries to perform complete the task.
@@ -44,4 +48,22 @@ conda install pandas numpy plotly matplotlib notebook scikit-learn
 
    ---
 
-   ## Findings
+   ## Procedure and Result:
+
+   - To initialize the project, I decided to manually plot a `hours vs scores` plot to manually identify any relationships between the two variables.
+
+![Image](./images/hours_vs_scores_plot.png)
+
+- The above scatter plot makes the fact very clear that both the variables i.e `Hours Studied` and `Percentage Obtained` exhibits a very high correaltion of positive nature with a correlation coef of `0.9761906560220885`. 
+```python
+# Calculating the correlation coefficient
+corr_coef = data_df.hours.corr(data_df.scores)
+>>> 0.9761906560220885 
+```
+- The next step involved the splitting of dataset into training and testing sets which is an important part of evaluating data mining models. 
+Firstly, I split the dataset into attributs(inputs) and labels(outputs) which is followed by uusing the `Scikit-Learn` built-in `train_test_split()` method.
+- Now we can sucessfully train our algorithim using the `Scikit-Learn` built-in `LinerRegression` method and finally predict `score of a studying for 9.25 hrs/day`.
+
+![GitHub-Mark-Light](./images/output.png#gh-light-mode-only)
+
+-  The score predicted by our algorithim is `93.69173249` and the Mean Absolute Error is `4.183859899002982`.
