@@ -1,3 +1,4 @@
-
+# Ignoring README.md file
+README.md
 *.jpg
 *.png
