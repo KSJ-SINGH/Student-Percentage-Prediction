@@ -8,7 +8,7 @@
 
 I always took this saying with a grain of salt. 
 
-This project, I aim to end my skepticism regarding this proverb. Using `Unsupervised ML algorithim`, I am going to calculate the `correlation` by a `linear regression test` between hours studied and precentage scored by a student.
+This project, I aim to end my skepticism regarding this proverb. Using `Supervised ML algorithim`, I am going to calculate the `correlation` by a `linear regression test` between hours studied and precentage scored by a student.
 >`Correlation` is a statistical term describing the degree to which two variables move in coordination with one another. If the two variables move in the same direction, then those variables are said to have a positive `correlation`. If they move in opposite directions, then they have a negative `correlation`.
 ---
 ## Project Goals:
